@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/main_style.css" rel="stylesheet">
+    <title>Магазим электронной техники</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+<div class="container">
+    <div class="row">
+        <div class="clearfix">
+            <div class="col-lg-6 col-md-6 col-s6-6 col-xs-6 highheader1">
+                <p>Контакты</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-s6-6 col-xs-6 highheader2">
+                <form action="#" method="get">
+                    <select name="auth">
+                        <option value="kabinet" selected><a href="#">Личный кабинет</a></option>
+                        <option value="registration"><a href="#">Регистрация</a></option>
+                        <option value="auth_user"><a href="#">Авторизация</a></option>
+                        <option value="ref_pass"><a href="#">Забыли пароль</a></option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="clearfix">
+            <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader1">
+                <p>Логотип</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader2">
+                <div id="search">
+                    <form name="search" action="<?=$link_search?>" method="get">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" name="query" placeholder="Поиск" />
+                                </td>
+                                <td>
+                                    <input type="submit" value="" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader3">
+                <p>Корзина</p>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="clearfix">
+            <div class="col-lg-6 col-md-6 col-s6-6 col-xs-6 catalog">
+                <aside>
+                    <p>Каталог товаров</p>
+                    <ul>
+                        <li><a>Товар №1</a></li>
+                        <li><a>Товар №2</a></li>
+                        <li><a>Товар №3</a></li>
+                        <li><a>Товар №4</a></li>
+                        <li><a>Товар №5</a></li>
+                        <li><a>Товар №6</a></li>
+                        <li><a>Товар №7</a></li>
+                        <li><a>Товар №8</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="row">
+                <div class="clearfix">
+                    <div class="col-lg-6 col-md-6 col-xs-6 col-xs-6 mainmenu">
+                        <nav>
+                            <ul>
+                                <li><a>Акции</a></li>
+                                <li><a>Способы оплаты и доставки</a></li>
+                                <li><a>О нас</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row">
+                        <div class="clearfix">
+                            <div class="col-lg-6 col-md-6 col-s6-6 col-xs-6 slider">
+                                <section>
+                                    <p>Слайдер</p>
+                                    <p>Наши приемущества</p>
+                                </section>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-s6-6 col-xs-6 special">
+                                <section>
+                                    <p>Спецпредложения</p>
+                                    <p>Счетчик времени</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<article>
+    <div class="container">
+        <div class="row ">
+            <div class="clearfix">
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <h4>Товар №1</h4>
+                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <h4>Товар №2</h4>
+                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <h4>Товар №3</h4>
+                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
+                    </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <h4>Товар №4</h4>
+                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="clearfix">
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <h4>Товар №5</h4>
+                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <h4>Товар №6</h4>
+                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <h4>Товар №7</h4>
+                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <h4>Товар №8</h4>
+                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<footer>
+    <div class="container">
+        <div class="row ">
+            <div class="clearfix">
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <p>Лучше не пиши на чистом пхп, а возьми какой-нибудь простенький фреймворк. Тот же slim или silex. По крайней мере, они дадут тебе знания о том, как использовать автозагрузку и разделение на код и темплейт.</p>
+                    <p>Поставь нормальную IDE. К примеру, PHPStorm. И выставь там в настройках Editor -> Code Style -> PHP «Set from...» -> PSR1/PSR2. Для базы данных можешь использовать либо чистый PDO, либо взять Doctrine DBAL.</p>
+                    <p>Есть еще Doctrine ORM, но это сложно, пожалуй. А DBAL позволяет выполнять запросы в базу, делаю привязку параметров. Также из микрофреймворков есть Lumen.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <p>Лучше не пиши на чистом пхп, а возьми какой-нибудь простенький фреймворк. Тот же slim или silex. По крайней мере, они дадут тебе знания о том, как использовать автозагрузку и разделение на код и темплейт.</p>
+                    <p>Поставь нормальную IDE. К примеру, PHPStorm. И выставь там в настройках Editor -> Code Style -> PHP «Set from...» -> PSR1/PSR2. Для базы данных можешь использовать либо чистый PDO, либо взять Doctrine DBAL.</p>
+                    <p>Есть еще Doctrine ORM, но это сложно, пожалуй. А DBAL позволяет выполнять запросы в базу, делаю привязку параметров. Также из микрофреймворков есть Lumen.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <p>Лучше не пиши на чистом пхп, а возьми какой-нибудь простенький фреймворк. Тот же slim или silex. По крайней мере, они дадут тебе знания о том, как использовать автозагрузку и разделение на код и темплейт.</p>
+                    <p>Поставь нормальную IDE. К примеру, PHPStorm. И выставь там в настройках Editor -> Code Style -> PHP «Set from...» -> PSR1/PSR2. Для базы данных можешь использовать либо чистый PDO, либо взять Doctrine DBAL.</p>
+                    <p>Есть еще Doctrine ORM, но это сложно, пожалуй. А DBAL позволяет выполнять запросы в базу, делаю привязку параметров. Также из микрофреймворков есть Lumen.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-s6-6 col-xs-6 ">
+                    <p>Лучше не пиши на чистом пхп, а возьми какой-нибудь простенький фреймворк. Тот же slim или silex. По крайней мере, они дадут тебе знания о том, как использовать автозагрузку и разделение на код и темплейт.</p>
+                    <p>Поставь нормальную IDE. К примеру, PHPStorm. И выставь там в настройках Editor -> Code Style -> PHP «Set from...» -> PSR1/PSR2. Для базы данных можешь использовать либо чистый PDO, либо взять Doctrine DBAL.</p>
+                    <p>Есть еще Doctrine ORM, но это сложно, пожалуй. А DBAL позволяет выполнять запросы в базу, делаю привязку параметров. Также из микрофреймворков есть Lumen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
