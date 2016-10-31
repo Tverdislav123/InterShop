@@ -17,6 +17,11 @@ body {
 .lowheader2 {
     border: 1px solid green;
     width: 50%;
+    margin: 0;
+    padding: 0;
+}
+.submit {
+    width: 100%;
 }
 .lowheader3 {
     border: 1px solid green;
