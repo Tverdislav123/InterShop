@@ -7,6 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/main_style.css" rel="stylesheet">
+    <link href="css/product_style.css" rel="stylesheet">
     <title>Магазим электронной техники</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -18,49 +19,49 @@
 </head>
 <body>
 <header>
-<div class="container">
-    <div class="row">
-        <div class="clearfix">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 highheader1">
-                <p>Контакты</p>
+    <div class="container">
+        <div class="row">
+            <div class="clearfix">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 highheader1">
+                    <p>Контакты</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 highheader2">
+                    <form action="#" method="get">
+                        <select name="auth">
+                            <option value="kabinet" selected><a href="#">Личный кабинет</a></option>
+                            <option value="registration"><a href="#">Регистрация</a></option>
+                            <option value="auth_user"><a href="#">Авторизация</a></option>
+                            <option value="ref_pass"><a href="#">Забыли пароль</a></option>
+                        </select>
+                    </form>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 highheader2">
-                <form action="#" method="post">
-                    <select name="auth">
-                        <option value="kabinet" selected><a href="#">Личный кабинет</a></option>
-                        <option value="registration"><a href="#">Регистрация</a></option>
-                        <option value="auth_user"><a href="#">Авторизация</a></option>
-                        <option value="ref_pass"><a href="#">Забыли пароль</a></option>
-                    </select>
-                </form>
+        </div>
+        <div class="row">
+            <div class="clearfix">
+                <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader1">
+                    <p>Логотип</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader2">
+                    <form name="search" action="<?=$link_search?>" method="get">
+                        <table>
+                            <tr>
+                                <td class="search">
+                                    <input size="70%" type="search" name="query" placeholder="Поиск" />
+                                </td>
+                                <td>
+                                    <input class="submit" type="submit" value="Поиск" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader3">
+                    <p>Корзина</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="clearfix">
-            <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader1">
-                <p>Логотип</p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader2">
-                <form name="search" action="<?=$link_search?>" method="post">
-                    <table>
-                        <tr>
-                            <td class="search">
-                                <input size="70%" type="search" name="query" placeholder="Поиск" />
-                            </td>
-                            <td>
-                                <input class="submit" type="submit" value="Поиск" />
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-            <div class="col-lg-4 col-md-4 col-s6-4 col-xs-4 lowheader3">
-                <p>Корзина</p>
-            </div>
-        </div>
-    </div>
-</div>
 </header>
 <div class="container">
     <div class="row">
@@ -91,35 +92,6 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="row">
-                        <div class="clearfix">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 slider">
-                                <section>
-                                    <p>Слайдер</p>
-                                </section>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 special">
-                                <section>
-                                    <p>Спецпредложения</p>
-                                    <p>Счетчик времени</p>
-                                </section>
-                            </div>
-                            <div class="row">
-                                <div class="clearfix">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 slider">
-                                        <section>
-                                            <p>Наши приемущества</p>
-                                            <ul>
-                                                <li><a>Лучшая цена</a></li>
-                                                <li><a>Быстрая доставка</a></li>
-                                                <li><a>Гарантия на товар</a></li>
-                                            </ul>
-                                        </section>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -127,51 +99,99 @@
 </div>
 <article>
     <div class="container">
+        <h1>Наименование товара</h1>
+        <a href="#">Характеристики</a>
+        <a href="#">Отзывы</a>
+        <p class="articul">Артикул: #</p>
         <div class="row ">
             <div class="clearfix">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-                    <h4>Товар №1</h4>
-                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
-                    <p><a href="#">Описание товара</a></p>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+                    <a href="#"><img src="http://lorempixel.com/300/300/fashion"></a>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-                    <h4>Товар №2</h4>
-                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
-                    <p><a href="#">Описание товара</a></p>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 price">
+                    <h4>Цена</h4>
+                    <form action="#" method="post">
+                        <input type="submit" value="Купить" />
+                    </form>
+                    <a href="#">Сравнение</a>
+                    <a href="#">Добавить в мои желания</a>
+                    <a href="#">Следить за ценой</a>
+                    <a href="#">Написать отзыв</a>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-                    <h4>Товар №3</h4>
-                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
-                    <p><a href="#">Описание товара</a></p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-                    <h4>Товар №4</h4>
-                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
-                    <p><a href="#">Описание товара</a></p>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 ">
+                    <p>Доставка</p>
+                    <p>Ваш город: #</p>
+                    <p>- Забрать в магазине</p>
+                    <p>- Доставка по адресу</p>
+                    <p>Доставим за 3 часа заказы, согласованные с оператором до 19:00 текущего дня</p>
+                    <p>Заказы свыше 12000 тенге доставляются бесплатно внутри города</p>
+                    <br/>
+                    <p>Оплата</p>
+                    <p>- Наличными при получении</p>
+                    <p>- Платежной картой при получении</p>
+                    <p>- Платежной картой на сайте</p>
+                    <p>- В кредит</p>
+                    <p>- Безналичное перечисление (только для юридических лиц)</p>
                 </div>
             </div>
         </div>
         <div class="row">
+            <h1>Характеристики</h1>
             <div class="clearfix">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-                    <h4>Товар №5</h4>
-                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
-                    <p><a href="#">Описание товара</a></p>
+                <div class="col-lg-6 col-md-6 col-s6-6 col-xs-6">
+                    <h3>Тип</h3>
+                    <table>
+                        <tr>
+                            <td>Тип</td>
+                            <td>###</td>
+                        </tr>
+                    </table>
+                    <h3>Технические характеристики</h3>
+                    <table>
+                        <tr>
+                            <td>Мощность</td>
+                            <td>###</td>
+                        </tr>
+                        <tr>
+                            <td>Наминальный ток</td>
+                            <td>###</td>
+                        </tr>
+                        <tr>
+                            <td>Габаритные размеры</td>
+                            <td>###</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-                    <h4>Товар №6</h4>
-                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
-                    <p><a href="#">Описание товара</a></p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-                    <h4>Товар №7</h4>
-                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
-                    <p><a href="#">Описание товара</a></p>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
-                    <h4>Товар №8</h4>
-                    <a href="#"><img src="http://lorempixel.com/200/200/fashion"></a>
-                    <p><a href="#">Описание товара</a></p>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+                    <h3>Функции</h3>
+                    <table>
+                        <tr>
+                            <td>Способ монтажа</td>
+                            <td>###</td>
+                        </tr>
+                        <tr>
+                            <td>Подсветка индикаторов</td>
+                            <td>###</td>
+                        </tr>
+                        <tr>
+                            <td>Реле защиты</td>
+                            <td>###</td>
+                        </tr>
+                    </table>
+                    <h3>Корпус</h3>
+                    <table>
+                        <tr>
+                            <td>Цвет</td>
+                            <td>###</td>
+                        </tr>
+                    </table>
+                    <h3>Защита</h3>
+                    <table>
+                        <tr>
+                            <td>Защита от перегрева</td>
+                            <td>###</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>

@@ -1,0 +1,12 @@
+.articul {
+    display: inline;
+}
+.price h4 {
+    display: inline;
+}
+.price form {
+    display: inline;
+}
+.price a {
+    display: block;
+}
